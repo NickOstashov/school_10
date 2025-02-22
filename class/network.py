@@ -33,8 +33,8 @@ class User:
         # удаление себя из списка друзей у другого пользователя
         other_user.friend_list.remove(self)
 
-user_1 = User("Вася Пупкин", "123", "vasia@mail.ru")
 
+user_1 = User("Вася Пупкин", "123", "vasia@mail.ru")
 user_2 = User("Федя", "321", "fedua@mail.ru")
 
 user_1.add_friend(user_2)
