@@ -10,7 +10,7 @@ class Car:
         print("количетсво дверей :", self.door_number)
 
 print("CAR_1")
-car_1 = Car("желтый", "lada", 4)
+car_1 = Car("желтый", door_number = 4, model = "lada")
 car_1.print_info()
 
 print()
