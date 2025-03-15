@@ -19,4 +19,12 @@ def main():
                 dp_line.append(0)
         dp.append(dp_line)
 
-    print(dp)
+    for i in range(1, n):
+        for  j in range(1, m):
+            dp[i][j] = dp[i][j-1] + dp[i-1][j]
+
+    print(dp[n-1][m-1])
+
+
+if __name__ == "__main__":
+    main()
